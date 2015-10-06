@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cordova-plugin-spinnerdialog by filfat-Studios-AB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cordova-plugin-spinnerdialog</h1>
+      <h2 class="project-tagline">Cordova plugin for showing a progress indicator based on Paldom/SpinnerDialog</h2>
+      <a href="https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog" class="btn">View on GitHub</a>
+      <a href="https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="cordova-plugin-spinnerdialog" class="anchor" href="#cordova-plugin-spinnerdialog" aria-hidden="true"><span class="octicon octicon-link"></span></a>cordova-plugin-spinnerdialog</h1>
+
+<p>Cordova plugin for showing a progress indicator based on Paldom/SpinnerDialog</p>
+
+<h2>
+<a id="platforms" class="anchor" href="#platforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Platforms</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png" width="48px" height="48px" alt="Android logo"></th>
+<th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/2000px-Apple_logo_black.svg.png" width="48px" height="48px" alt="iOS logo"></th>
+<th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2000px-Windows_logo_-_2012.svg.png" width="48px" height="48px" alt="Windows logo"></th>
+<th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2000px-Windows_logo_-_2012.svg.png" width="48px" height="48px" alt="Windows logo"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">4.1+ ✔</td>
+<td align="center">?+ ✔</td>
+<td align="center">Windows Phone 8.1+ ✔</td>
+<td align="center">10+ ✔</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>cordova plugin add https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog
+cordova prepare
+</code></pre>
+
+<h2>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<ul>
+<li><code>SpinnerDialog.show</code></li>
+<li><code>SpinnerDialog.hide</code></li>
+</ul>
+
+<h4>
+<a id="spinnerdialogshow" class="anchor" href="#spinnerdialogshow" aria-hidden="true"><span class="octicon octicon-link"></span></a>SpinnerDialog.show</h4>
+
+<pre><code>SpinnerDialog.show([title], [message], [cancelCallback])
+</code></pre>
+
+<ul>
+<li>
+<strong>title</strong>: Spinner title (Android only). Optional. <em>(String)</em>
+</li>
+<li>
+<strong>message</strong>: Spinner message. Optional. <em>(String)</em>
+</li>
+<li>
+<strong>cancelCallback</strong>: Callback to invoke when spinner cancel event fired (tap or Android hardware back button event). If set, spinner dialog will be fixed, you should explicitly call <code>window.plugins.spinnerDialog.hide</code>. Due to legacy reasons you can provide boolean value (true/false) to set spinner not cancelable. Optional, defaults to <code>false</code>. <em>(Function/Boolean)</em>
+</li>
+</ul>
+
+<h4>
+<a id="spinnerdialoghide" class="anchor" href="#spinnerdialoghide" aria-hidden="true"><span class="octicon octicon-link"></span></a>SpinnerDialog.hide</h4>
+
+<pre><code>SpinnerDialog.hide();
+</code></pre>
+
+<h2>
+<a id="quirks" class="anchor" href="#quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quirks</h2>
+
+<ul>
+<li>Cordova 5.0 or higher is required for Windows 10 support.</li>
+<li>Windows 10 Mobile or Windows Phone 8.1 is required as desktop doesn't support StatusBar.</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>See "LICENSE".
+Based on <a href="https://github.com/Paldom/SpinnerDialog">https://github.com/Paldom/SpinnerDialog</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog">Cordova-plugin-spinnerdialog</a> is maintained by <a href="https://github.com/filfat-Studios-AB">filfat-Studios-AB</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
