@@ -2,6 +2,8 @@ cordova-plugin-spinnerdialog
 =============
 Cordova plugin for showing a progress indicator based on Paldom/SpinnerDialog
 
+[cordova-plugin-progress-indicator on NPM](https://www.npmjs.com/package/cordova-plugin-progress-indicator)
+
 ## Platforms
 | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png" width="48px" height="48px" alt="Android logo"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/2000px-Apple_logo_black.svg.png" width="48px" height="48px" alt="iOS logo"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2000px-Windows_logo_-_2012.svg.png" width="48px" height="48px" alt="Windows logo"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2000px-Windows_logo_-_2012.svg.png" width="48px" height="48px" alt="Windows logo">
 |:---:|:---:|:---:|:---:|
