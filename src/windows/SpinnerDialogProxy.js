@@ -1,5 +1,5 @@
 //  cordova-plugin-spinnerdialog
-//  Copyright © 2015 filfat Studios AB
+//  Copyright Â© 2015 filfat Studios AB
 //  Repo: https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog
 /* global Windows, cordova */
 var progressIndicator;
@@ -15,7 +15,7 @@ cordova.commandProxy.add("SpinnerDialog",{
             
             if(data.title == null)
                 data.title = undefined;
-            progressIndicator.Text = typeof data.title !== 'undefined' ? data.title : 'Loading...';
+            progressIndicator.text = typeof data.title !== 'undefined' ? data.title : 'Loading...';
             progressIndicator.showAsync();
         }
     },
