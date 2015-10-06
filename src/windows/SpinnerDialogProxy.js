@@ -11,7 +11,7 @@ cordova.commandProxy.add("SpinnerDialog",{
             typeof Windows.UI.ViewManagement.StatusBar !== 'undefined' /* Check that we have the StatusBar to work with*/) {
 
             var data = data[0];
-            progressIndicator = Windows.UI.ViewManagement.StatusBar.getForCurrentView().progressIndicator;
+            progressIndicator = Windows.UI.ViewManagement.StatusBar.ProgressIndicator;
             
             if(data.title == null)
                 data.title = undefined;
