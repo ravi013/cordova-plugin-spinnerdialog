@@ -18,6 +18,10 @@ cordova.commandProxy.add("SpinnerDialog",{
                 data.title = undefined;
             progressIndicator.text = typeof data.title !== 'undefined' ? data.title : 'Loading...';
             progressIndicator.showAsync();
+        } else if (typeof Windows !== 'undefined' &&
+                    typeof Windows.UI !== 'undefined' /* Check that we have a UI to work with */) {
+                        
+            //TODO: Support Desktop, Xbox, etc
         }
     },
     hide: function (successCallback, errorCallback, data) {
@@ -26,6 +30,10 @@ cordova.commandProxy.add("SpinnerDialog",{
             typeof Windows.UI.ViewManagement.StatusBar !== 'undefined' /* Check that we have the StatusBar to work with*/) {
 
             progressIndicator.hideAsync();
+        } else if (typeof Windows !== 'undefined' &&
+                    typeof Windows.UI !== 'undefined' /* Check that we have a UI to work with */) {
+                        
+            //TODO: Support Desktop, Xbox, etc
         }
     }
 });
