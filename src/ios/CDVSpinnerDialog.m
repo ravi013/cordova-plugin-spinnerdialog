@@ -58,15 +58,15 @@
         _indicator.center = _overlay.center;
         [_indicator startAnimating];
         [_overlay addSubview:_indicator];
-
+        
         _messageView = [[UILabel alloc] initWithFrame: self.rectForView];
         [_messageView setText: message == nil ? title : message];
         [_messageView setTextColor: [UIColor colorWithRed:[red floatValue] green:[green floatValue] blue:[blue floatValue] alpha:0.85]];
         [_messageView setBackgroundColor: [UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
         [_messageView setTextAlignment: NSTextAlignmentCenter];
-         _messageView.center = (CGPoint){_overlay.center.x, _overlay.center.y + 40};
+        _messageView.center = (CGPoint){_overlay.center.x, _overlay.center.y + 40};
         [_overlay addSubview:_messageView];
-
+        
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
         [_overlay addGestureRecognizer: tapRecognizer];
     }
@@ -75,9 +75,9 @@
 
 
 - (void) show:(CDVInvokedUrlCommand*)command {
-
+    
     callbackId = command.callbackId;
-
+    
     title = [command argumentAtIndex:0];
     message = [command argumentAtIndex:1];
     isFixed = [command argumentAtIndex:2];
@@ -87,9 +87,9 @@
     blue = [command argumentAtIndex:6];
     
     UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-
+    
     [rootViewController.view addSubview:self.overlay];
-
+    
 }
 
 - (void) hide:(CDVInvokedUrlCommand*)command {
@@ -112,5 +112,4 @@
 
 
 @end
-
 
