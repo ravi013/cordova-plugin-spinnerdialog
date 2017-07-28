@@ -13,8 +13,8 @@
     "id": "rds-spinner",
     "platforms": [
       "android",
-	  "ios",
-	  "wp8",
+      "ios",
+      "wp8",
       "windows"
     ]
   },
@@ -24,22 +24,22 @@
     "dialog",
     "spinnerdialog",
     "progress",
-	"indicator",
-	"progressindicator",
+    "indicator",
+    "progressindicator",
     "plugin",
     "notification",
     "ecosystem:cordova",
     "cordova-android",
-	"cordova-ios",
-	"cordova-wp8",
+    "cordova-ios",
+    "cordova-wp8",
     "cordova-windows",
-	"android",
-	"ios",
-	"wp8",
-	"windows",
-	"10",
-	"8.1",
-	"phone"
+    "android",
+    "ios",
+    "wp8",
+    "windows",
+    "10",
+    "8.1",
+    "phone"
   ],
   "engines": [
     {
