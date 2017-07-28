@@ -8,7 +8,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
-    id="rds-spinner"
+    id="com.rds.spinner"
 	version="1.0.2">
     <name>SpinnerDialog</name>
 	<description>
@@ -32,12 +32,12 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="SpinnerDialog">
-                <param name="android-package" value="com.filfatstudios.spinnerdialog.SpinnerDialog"/>
+                <param name="android-package" value="com.rds.spinner"/>
             </feature>
         </config-file>
         
-        <source-file src="src/android/SpinnerDialog.java" target-dir="src/com/filfatstudios/spinnerdialog" />
-        <source-file src="src/android/CallbackProgressDialog.java" target-dir="src/com/filfatstudios/spinnerdialog" />
+        <source-file src="src/android/SpinnerDialog.java" target-dir="src/com/rds/spinner/" />
+        <source-file src="src/android/CallbackProgressDialog.java" target-dir="src/com/rds/spinner/" />
     </platform>
 
 	<!-- ios -->

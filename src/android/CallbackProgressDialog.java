@@ -1,7 +1,7 @@
 //  cordova-plugin-spinnerdialog
 //  Copyright © 2015 filfat Studios AB
 //  Repo: https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog
-package com.filfatstudios.spinnerdialog;
+package com.rds.spinner;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
